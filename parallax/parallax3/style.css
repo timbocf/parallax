@@ -1,0 +1,110 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "Lato", sans-serif;
+  color: #777;
+}
+
+html, body, section {
+  width: 100%;
+}
+
+.hero {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 80vh;
+  width: 100vw;
+}
+
+.caption {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  position: relative;
+  opacity: 0.65;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+.bgimg-1 {
+  background-image: url("https://www.w3schools.com/howto/img_parallax.jpg");
+  min-height: 100%;
+}
+
+.bgimg-2 {
+  background-image: url("https://www.w3schools.com/howto/img_parallax2.jpg");
+  height: 400px;
+}
+
+.bgimg-3 {
+  height: 400px;
+  background-image: url("https://www.w3schools.com/howto/img_parallax3.jpg");
+}
+
+.border {
+  font-size: 25px;
+  padding: 18px;
+  background: #111;
+  color: #fff;
+  letter-spacing: 10px;
+}
+
+.border-transparent {
+  font-size: 25px;
+  padding: 18px;
+  background: transparent;
+  color: #fff;
+  letter-spacing: 10px;
+}
+
+.border2 {
+  color: #ddd;
+  background-color: #282E34;
+  width: 100%;
+  padding: 0;
+  text-align: justify;
+}
+
+.border2 p {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  padding: 50px 80px;
+}
+
+.content {
+  color: #777;
+  background-color: #fff;
+  text-align: justify;
+  padding: 50px 80px;
+}
+
+.content h3 {
+  text-align: center;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  color: #111;
+}
+
+.small {
+  position: relative;
+}
+
+.box {
+  color:#ddd;
+  background-color:#282E34;
+  padding:50px 80px;
+  text-align: justify;
+}

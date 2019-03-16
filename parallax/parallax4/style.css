@@ -1,0 +1,71 @@
+body {
+  margin: 0;
+  font: 400 15px/1.8 "Lota", sans-serif;
+}
+
+.hero {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("https://timrodgers.us/images/tim-rodgers-portfolio-2000x1500.jpg") 50% 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+}
+
+.hero::before {
+  content: '';
+  height: 170vh;
+  width: 100vw;
+  position: absolute;
+}
+
+.hero > h1 {
+  position: relative;
+  z-index: 1;
+  color: white;
+  text-align: left;
+  margin: 30vh auto 0;
+  padding-left: 10vw;
+  font: 4rem "Poppins", sans-serif;
+  line-height: 4rem;
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.35); 
+}
+
+.content {
+  position: absolute;
+  z-index: 1000;
+  top: 80vh;
+  background: #faf8f8;
+  width: 100%;
+  box-shadow: 0 -2px 1px rgba(0, 0, 0, 0.15);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.content .inner {
+  padding: 50px 80px;
+}
+
+.parallax {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  color: #777;
+  background: url("https://timrodgers.us/images/portfolio/setfree-home.jpeg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: 0 300px;
+  background-repeat: no-repeat;
+}
+
+.small {
+  position: relative;
+  background-color: #000;
+  color: #eee;
+}
+
+.small .box {
+  padding: 50px 80px;
+}
