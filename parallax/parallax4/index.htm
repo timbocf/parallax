@@ -1,10 +1,35 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href="style.css" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Poppins|Roboto" rel="stylesheet">
 <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
-<script type="text/javascript" src="parallax-hero.js"></script>
+<script type="text/javascript">
+
+  $(document).ready(function(){
+
+    $(window).scroll(function(e){
+
+	parallax();
+
+     });
+
+
+	
+  function parallax(){
+
+    var scrolled = $(window).scrollTop();
+      $('.hero').css('top',-(scrolled*0.0315)+'rem');
+
+      $('.hero .headline').css('top',-(scrolled*-0.005)+'rem');
+
+      $('.hero .headline').css('opacity',1-(scrolled*.00175));
+
+    };
+
+  });
+</script>
 </head>
 <body>
   <section class="hero">
